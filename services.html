@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="/static">
+    <title>Your Name's Portfolio</title>
+    <link rel="stylesheet" href="static/theme2/css/styles.css">
 </head>
-<body>
-    <header>
-        <h1></h1>
-        <nav>
+<body class="theme2-body">
+    <header class="theme2-header">
+        <img src="static/theme2/images/profile_picture.jpg" alt="Profile Picture" class="profile-picture">
+        <h1>Your Name's Portfolio</h1>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -21,16 +22,20 @@
     </header>
     <main>
         
-<h2>My Services and experience</h2>
-<h1>My Services</h1>
-<h2>Service 1</h2>
-<p><strong>Description</strong>: What this service involves.</p>
-<h2>Service 2</h2>
-<p><strong>Description</strong>: What this service involves.</p>
+<section>
+    <h1>Services</h1>
+<p>I offer the following services:
+- <strong>Web Development</strong>: Custom web applications and websites.
+- <strong>Consulting</strong>: Software architecture and technology consulting.
+- <strong>Training</strong>: Workshops and training sessions on web development and software engineering best practices.</p>
+</section>
 
     </main>
-    <footer>
-        <p>&copy;  . All rights reserved.</p>
+    <footer class="theme2-footer">
+        <p>&copy; August 28, 2024. All rights reserved.</p>
+        <p><a href="static/theme2/resume/resume.pdf" download>Download Resume</a></p>
+        <button id="back-to-top" title="Go to top">Top</button>
     </footer>
+    <script src="static/js/scripts.js"></script>
 </body>
 </html>

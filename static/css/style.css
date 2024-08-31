@@ -1,13 +1,139 @@
+/* Light Theme CSS */
+
 body {
-    background-color: darkgray;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-header.theme2-header {
-    background-color: #333333;
-    color: #ffffff;
+header {
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333333; /* Dark gray text */
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
-footer.theme2-footer {
-    background-color: #333333;
-    color: #ffffff;
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333333; /* Dark gray links */
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #007bff; /* Blue hover color */
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333333;
+}
+
+a {
+    color: #007bff; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333333; /* Dark gray text */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button styling */
+button, .download-button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .download-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    button, .download-button {
+        width: 100%;
+    }
 }
